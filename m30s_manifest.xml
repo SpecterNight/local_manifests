@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="playground"
+          fetch="https://github.com/sundrams-playground"
+          revision="udc" />
+
+  <remote name="los"
+          fetch="https://github.com/LineageOS"
+          revision="lineage-21" />
+
+  <remote name="test"
+          fetch="https://github.com/sundrams-playground"
+          revision="test" />
+  
+  <!-- device -->
+  <project path="device/samsung/m307f" name="device_samsung_m307f" remote="playground" />
+  <project path="device/samsung/m30s-common" name="device_samsung_m30s-common" remote="test" />
+  <!-- kernel -->
+  <project path="kernel/samsung/m30s" name="sundrams-playground/android_kernel_samsung_m30s" remote="github" clone-depth="1" revision="new-bpf" />
+  <project path="prebuilts/clang/host/linux-x86/clang-r383902" name="moto-common/platform_prebuilts_clang_host_linux-x86_clang-r383902" remote="github" revision="master" />
+
+  <!-- vendor -->
+  <project path="vendor/samsung/m307f" name="vendor_samsung_m307f" remote="playground" clone-depth="1" />
+  <project path="vendor/samsung/m30s-common" name="vendor_samsung_m30s-common" remote="test" clone-depth="1" />
+</manifest>
