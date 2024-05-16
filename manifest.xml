@@ -17,4 +17,5 @@
 	<project path="hardware/samsung-ext/interfaces" name="hardware_samsung-extra_interfaces" remote="dev" revision="lineage-21"/>
 	<!-- Moto dolby -->
 	<project path="vendor/motorola/dolby" name="vendor_motorola_dolby" remote="dev" revision="master"/>
+	<project path="hardware/xiaomi" name="hardware_xiaomi" remote="dev"/>
 </manifest>
